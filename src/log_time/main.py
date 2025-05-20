@@ -8,6 +8,7 @@ from save_generated_hash import saveGeneratedHash
 
 jiraHostName = ""; defaultFileLocation = ""
 commandLineArguments = sys.argv[1:]
+print(f"\033[31mArguments: {commandLineArguments}\033[0m")
 for argument in commandLineArguments:
     flagName, flagValue = argument.split("=")
     if flagName == "--jira" or flagName == "-j":
