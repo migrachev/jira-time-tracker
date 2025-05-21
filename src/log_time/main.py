@@ -1,32 +1,28 @@
 import sys
-from get_user_data import getUserData
-from parse_user_data import parseUserData
-from validate_user_data import validateUserData
-from log_jira_time import logJiraTime
-from generate_hash import generateHash
-from save_generated_hash import saveGeneratedHash
+import user
+import jira
+import hash
 
-jiraHostName = ""; defaultFileLocation = ""
-commandLineArguments = sys.argv[1:]
-print(f"\033[31mArguments: {commandLineArguments}\033[0m")
-for argument in commandLineArguments:
-    flagName, flagValue = argument.split("=")
-    if flagName == "--jira" or flagName == "-j":
-        jiraHostName = flagValue
-    elif flagName == "--default-log-file-location" or flagName == "-l":
-        defaultFileLocation = flagValue
+jira_host_name = ""; default_file_location = ""
+command_line_arguments = sys.argv[1:]
+for argument in command_line_arguments:
+    flag_name, flag_value = argument.split("=")
+    if flag_name == "--jira" or flag_name == "-j":
+        jira_host_name = flag_value
+    elif flag_name == "--default-log-file-location" or flag_name == "-l":
+        default_file_location = flag_value
 
-if not jiraHostName:
+if not jira_host_name:
     print("\033[31mMissing required flag --jira! We need to know your jira hostname to log you time!\033[0m")
 else:
-    data: str = getUserData(defaultFileLocation)
+    data: str = user.get_data(default_file_location)
 
     if data:
-        formattedData = parseUserData(data)
-        logsHash = generateHash(formattedData)
-        isValidData = validateUserData(formattedData, logsHash)
-        if isValidData:
+        formatted_data = user.parse_data(data)
+        logs_hash = hash.generate(formatted_data)
+        is_valid_data = user.validate_data(formatted_data, logs_hash)
+        if is_valid_data:
             print("\033[32mData is valid!\033[0m")
-            isSuccessfullyLogged = logJiraTime(formattedData, jiraHostName)
-            if isSuccessfullyLogged:
-                saveGeneratedHash(logsHash)
+            is_successfully_logged = jira.log_time(formatted_data, jira_host_name)
+            if is_successfully_logged:
+                hash.save(logs_hash)
