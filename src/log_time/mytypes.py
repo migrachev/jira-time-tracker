@@ -9,4 +9,4 @@ class WorkLogRequest(TypedDict):
     url: str
     body: WorkLog
 
-UserData = dict[tuple[int, int, int], tuple[str, str, str]]
+UserData = dict[tuple[int, int, int], list[tuple[str, str, str]]]
