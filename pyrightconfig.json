@@ -1,0 +1,5 @@
+{
+  "python.analysis.typeCheckingMode": "strict",
+  "include": ["."],
+  "exclude": ["**/__pycache__", "**/build", "**/dist"]
+}
