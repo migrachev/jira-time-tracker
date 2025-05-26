@@ -1,24 +1,19 @@
 import re
-import subprocess
-import platform
-import requests
 import itertools
 import sys
 import time
 import threading
-from requests.auth import HTTPBasicAuth
 from datetime import datetime
 from pathlib import Path
 from typing import KeysView
-from mytypes import UserData, WorkLog
-from subprocess import CompletedProcess
-from requests import Response
+from mytypes import UserData
+from threading import Event
 
-def parseIsoDate(date_str: str) -> tuple[int, int, int]:
+def parse_iso_date(date_str: str) -> tuple[int, int, int]:
     year, month, day = map(int, date_str.split("-"))
     return year, month, day
 
-def isValidDate(date_str: str) -> bool:
+def is_valid_date(date_str: str) -> bool:
     try:
         date_str = '-'.join([str(int(part)) for part in date_str.split('-')])
         datetime.strptime(date_str, "%Y-%m-%d")
@@ -26,7 +21,7 @@ def isValidDate(date_str: str) -> bool:
     except ValueError:
         return False
     
-def splitWorkLog(s: str) -> tuple[str, str, str]:
+def split_work_log(s: str) -> tuple[str, str, str]:
     if s.startswith('-'):
         s = s[1:]
     s = s.strip()
@@ -43,7 +38,7 @@ def splitWorkLog(s: str) -> tuple[str, str, str]:
     
     return first_part, second_part, third_part
 
-def isProperWorkWeek(data: UserData) -> bool:
+def is_proper_work_week(data: UserData) -> bool:
     dates: KeysView = data.keys()
     date_objects: list[datetime] = [datetime(year=y, month=m, day=d) for (y, m, d) in dates]
     first_week: int = date_objects[0].isocalendar()[1]
@@ -57,7 +52,7 @@ def isProperWorkWeek(data: UserData) -> bool:
     
     return len(working_days) == 5
 
-def areJiraIdentifierValid(data: UserData) -> bool:
+def are_jira_identifiers_valid(data: UserData) -> bool:
     result: bool = True
     pattern = r'^[A-Z]{1,10}-\d+$'
 
@@ -74,7 +69,7 @@ def areJiraIdentifierValid(data: UserData) -> bool:
 
     return result
 
-def areTimesValid(data: UserData) -> bool:
+def are_times_valid(data: UserData) -> bool:
     result: bool = True
 
     times: list = []; value: tuple[str, str, str]
@@ -94,14 +89,14 @@ def areTimesValid(data: UserData) -> bool:
             result = False
             break
 
-        timeValue = float(time)
-        if timeValue <= 0 or timeValue > 8:
+        time_value = float(time)
+        if time_value <= 0 or time_value > 8:
             result = False
             break
 
     return result
 
-def isFullyLoggedWeek(data: UserData): #expects already checked data with areTimesValid
+def is_fully_logged_week(data: UserData): #expects already checked data with are_times_valid
     total: float = 0; value: tuple[str, str, str]
     for _, value in data.items():
         time: str
@@ -109,54 +104,26 @@ def isFullyLoggedWeek(data: UserData): #expects already checked data with areTim
             total = total + float(time[:-1])
 
     return total == 40
-
-def isReachable(hostname: str) -> bool:
-    # Define the ping command based on the operating system
-    flag: str = "-c" if platform.system() != "Windows" else "-n"
-    ping_command: list[str] = ["ping", flag, "1", hostname]
-
-    try:
-        result: CompletedProcess = subprocess.run(ping_command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
-        return result.returncode == 0
-    except subprocess.CalledProcessError:
-        return False
     
-def isInConflictWithPreviousExecution(logs: list[str]) -> bool:
-    scriptDir: Path = Path(__file__).parent
-    rootDir: Path = scriptDir.parent.parent
-    filePath: Path = rootDir / "data-hash-logs.log"
-    with open(filePath, "r") as logsFile:
+def in_conflict_with_previous_execution(logs: list[str]) -> bool:
+    script_dir: Path = Path(__file__).parent
+    root_dir: Path = script_dir.parent.parent
+    file_path: Path = root_dir / "data-hash-logs.log"
+    with open(file_path, "r") as logs_file:
         result = False
-        for line in list(logsFile):
+        for line in list(logs_file):
             if line in logs:
                 result = True
         return result
-
-def isValidJiraAuthentication(auth: HTTPBasicAuth, jiraHostName: str) -> bool:
-    url = f"https://{jiraHostName}:443/rest/api/2/myself"
-    try:
-        response: Response = requests.get(url, auth=auth)
-        response.raise_for_status()  # Raise an error for bad responses (4xx, 5xx)
-        return True
-    except requests.RequestException:
-        return False 
     
-def addWorklog(url: str, body: WorkLog, auth: HTTPBasicAuth):
-    try:
-        response: Response = requests.post(url, auth=auth, json=body, timeout=90) # sometimes JIRA is slow (old tickets)
-        response.raise_for_status()  # Raise an error for bad responses (4xx, 5xx)
-        return True
-    except requests.RequestException:
-        return False
-    
-def spinner(LoadingEvent):
+def spinner(loading_event: Event):
     for symbol in itertools.cycle(["Processing |", "Processing /", "Processing -", "Processing \\"]):
-        if LoadingEvent.is_set():
+        if loading_event.is_set():
             break
         sys.stdout.write(f"\r{symbol}")
         sys.stdout.flush()
         time.sleep(0.2)  #Speed of rotation
 
-def startSpinnedThread(LoadingEvent):
-    spinner_thread = threading.Thread(target=spinner, args=(LoadingEvent,), daemon=True)
+def start_spinner_thread(loading_event: Event):
+    spinner_thread = threading.Thread(target=spinner, args=(loading_event,), daemon=True)
     spinner_thread.start()
