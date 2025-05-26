@@ -1,6 +1,7 @@
 from utils import isProperWorkWeek, areJiraIdentifierValid, areTimesValid, isFullyLoggedWeek, isInConflictWithPreviousExecution
+from mytypes import UserData
 
-def validateUserData(userData: dict, logsHash: list):
+def validateUserData(userData: UserData, logsHash: list[str]):
     isValid = True
 
     if not isProperWorkWeek(userData):
