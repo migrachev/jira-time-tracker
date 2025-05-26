@@ -1,11 +1,12 @@
 import readchar
+import hash
 from prompt_toolkit import prompt
 from typing import TextIO, Iterator
 from utils import parse_iso_date, is_valid_date, split_work_log, in_conflict_with_previous_execution
 from utils import is_proper_work_week, are_jira_identifiers_valid, are_times_valid, is_fully_logged_week
 from mytypes import UserData
 
-def validate(user_data: UserData, logs_hash: list[str]):
+def validate(user_data: UserData):
     is_valid = True
 
     if not is_proper_work_week(user_data):
@@ -20,9 +21,11 @@ def validate(user_data: UserData, logs_hash: list[str]):
     elif not is_fully_logged_week(user_data):
         print("\033[31mThe total sum of worked hours is not 40!\033[0m")
         is_valid = False
-    elif in_conflict_with_previous_execution(logs_hash):
-        print("\033[31mInput data have already been process!\033[0m")
-        is_valid = False
+    else:
+        logs_hash: list[str] = hash.generate(user_data)
+        if in_conflict_with_previous_execution(logs_hash):
+            print("\033[31mInput data have already been process!\033[0m")
+            is_valid = False
 
     return is_valid
 
@@ -38,11 +41,10 @@ def parse(string_data: str) -> UserData:
             continue
         elif is_valid_date(stripped):
             work_day = parse_iso_date(stripped)
-            empty_value: tuple[str, str, str] = ("", "", "")
-            parsed[work_day] = empty_value
+            parsed[work_day] = []
         else:
             work_log: tuple[str, str, str] = split_work_log(stripped)
-            parsed[work_day] = work_log
+            parsed[work_day].append(work_log)
 
     return parsed
 

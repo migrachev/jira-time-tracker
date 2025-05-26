@@ -56,7 +56,7 @@ def are_jira_identifiers_valid(data: UserData) -> bool:
     result: bool = True
     pattern = r'^[A-Z]{1,10}-\d+$'
 
-    issues: list = []; value: tuple[str, str, str]
+    issues: list = []; value: list[tuple[str, str, str]]
     for _, value in data.items():
         issue: str
         for _, _, issue in value:
@@ -72,7 +72,7 @@ def are_jira_identifiers_valid(data: UserData) -> bool:
 def are_times_valid(data: UserData) -> bool:
     result: bool = True
 
-    times: list = []; value: tuple[str, str, str]
+    times: list = []; value: list[tuple[str, str, str]]
     for _, value in data.items():
         time: str
         for time, _, _ in value:
@@ -97,11 +97,11 @@ def are_times_valid(data: UserData) -> bool:
     return result
 
 def is_fully_logged_week(data: UserData): #expects already checked data with are_times_valid
-    total: float = 0; value: tuple[str, str, str]
+    total: float = 0; value: list[tuple[str, str, str]]
     for _, value in data.items():
         time: str
         for time, _, _ in value:
-            total = total + float(time[:-1])
+            total += float(time[:-1])
 
     return total == 40
     
