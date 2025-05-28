@@ -8,8 +8,8 @@ from datetime import date
 from threading import Event
 from subprocess import CompletedProcess
 from requests import Response
-from mytypes import UserData, WorkLog, WorkLogRequest
-from utils import start_spinner_thread
+from .mytypes import UserData, WorkLog, WorkLogRequest
+from .utils import start_spinner_thread
 
 def log_time(user_data: UserData, jira_host_name: str) -> bool:
     loading_reachable_check_event: Event = Event()
@@ -34,7 +34,7 @@ def log_time(user_data: UserData, jira_host_name: str) -> bool:
 
         print("\r                                                      ")
         requests: list[WorkLogRequest] = []
-        day_tuple: tuple[int, int, int]; logs_tuple: tuple[str, str, str]
+        day_tuple: tuple[int, int, int]; logs_tuple: list[tuple[str, str, str]]
         for day_tuple, logs_tuple in user_data.items():
             day: date = date(*day_tuple)
             time: str; comment: str; issue: str

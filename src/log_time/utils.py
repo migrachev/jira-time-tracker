@@ -6,8 +6,8 @@ import threading
 from datetime import datetime
 from pathlib import Path
 from typing import KeysView
-from mytypes import UserData
 from threading import Event
+from .mytypes import UserData
 
 def parse_iso_date(date_str: str) -> tuple[int, int, int]:
     year, month, day = map(int, date_str.split("-"))
@@ -22,6 +22,7 @@ def is_valid_date(date_str: str) -> bool:
         return False
     
 def split_work_log(s: str) -> tuple[str, str, str]:
+    s = s.strip()
     if s.startswith('-'):
         s = s[1:]
     s = s.strip()
@@ -36,7 +37,7 @@ def split_work_log(s: str) -> tuple[str, str, str]:
     second_part: str = s[first_space_index + 1:last_space_index] if last_space_index != first_space_index else ''
     third_part: str = s[last_space_index + 1:]
     
-    return first_part, second_part, third_part
+    return first_part.strip(), second_part.strip(), third_part.strip()
 
 def is_proper_work_week(data: UserData) -> bool:
     dates: KeysView = data.keys()
@@ -112,6 +113,7 @@ def in_conflict_with_previous_execution(logs: list[str]) -> bool:
     with open(file_path, "r") as logs_file:
         result = False
         for line in list(logs_file):
+            print(line)
             if line in logs:
                 result = True
         return result

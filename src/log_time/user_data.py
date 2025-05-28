@@ -2,9 +2,9 @@ import readchar
 import hash
 from prompt_toolkit import prompt
 from typing import TextIO, Iterator
-from utils import parse_iso_date, is_valid_date, split_work_log, in_conflict_with_previous_execution
-from utils import is_proper_work_week, are_jira_identifiers_valid, are_times_valid, is_fully_logged_week
-from mytypes import UserData
+from .utils import parse_iso_date, is_valid_date, split_work_log, in_conflict_with_previous_execution
+from .utils import is_proper_work_week, are_jira_identifiers_valid, are_times_valid, is_fully_logged_week
+from .mytypes import UserData
 
 def validate(user_data: UserData):
     is_valid = True
