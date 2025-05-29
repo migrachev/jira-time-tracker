@@ -1,8 +1,8 @@
 import sys
-import hash
-import user_data
-import jira
-from mytypes import UserData
+from . import hash
+from . import user_data
+from . import jira
+from .mytypes import UserData
 
 jira_host_name: str = ""; default_file_location: str = ""
 flag_name: str; flag_value: str

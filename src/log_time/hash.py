@@ -1,6 +1,6 @@
 from pathlib import Path
 import hashlib
-from mytypes import UserData
+from .mytypes import UserData
 
 def generate(data: UserData) -> list[str]:
     logs: list[str] = []
@@ -24,4 +24,4 @@ def save(logs: list[str]):
         for index, log in enumerate(logs):
             file.write(log)
             if not index == len(logs) - 1:
-                file.write("\n")
+                file.write("\n") 
