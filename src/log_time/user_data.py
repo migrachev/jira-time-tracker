@@ -1,7 +1,7 @@
 import readchar
-import hash
 from prompt_toolkit import prompt
 from typing import TextIO, Iterator
+from . import hash
 from .utils import parse_iso_date, is_valid_date, split_work_log, in_conflict_with_previous_execution
 from .utils import is_proper_work_week, are_jira_identifiers_valid, are_times_valid, is_fully_logged_week
 from .mytypes import UserData
@@ -29,7 +29,6 @@ def validate(user_data: UserData):
 
     return is_valid
 
-
 def parse(string_data: str) -> UserData:
     parsed: UserData = {}
     work_day: tuple[int, int, int] = (0,0,0)
@@ -53,11 +52,10 @@ def get(default_file_location: str) -> str:
         "Refer data from file.", 
         "Paste data as text."
     ]
-    index: int = 0  # Start at the first option
+    index: int = 0
 
     while True:
         print("How do you want to supply us with the data to process?\n")
-        # Display options
         i: int; option: str
         for i, option in enumerate(options):
             if i == index:
@@ -65,12 +63,12 @@ def get(default_file_location: str) -> str:
             else:
                 print(f"  {option}")
 
-        key: str = readchar.readkey()  # Wait for key press
+        key: str = readchar.readkey() 
 
         if key == readchar.key.UP or key == readchar.key.LEFT:
-            index = (index - 1) % len(options)  # Move selection up/left
+            index = (index - 1) % len(options)
         elif key == readchar.key.DOWN or key == readchar.key.RIGHT:
-            index = (index + 1) % len(options)  # Move selection down/right
+            index = (index + 1) % len(options)
         elif key == readchar.key.ENTER or key == "\r":
             break  # Confirm selection
 
@@ -79,6 +77,7 @@ def get(default_file_location: str) -> str:
     data: str = ""
     if index:
         data = prompt("Paste your input here!")
+        data = data.strip()
     else:
         file_location: str = prompt("Please provide the file location: ", default=default_file_location)
         with open(file_location, 'r', encoding='utf-8') as data_file:
@@ -88,10 +87,12 @@ def get(default_file_location: str) -> str:
             while flag < 1:
                 line: str = next(iterator)
                 stripped: str = line.strip()
-                if stripped and (line.startswith("=") or line.startswith("#")):  # comment/empty lines ignored
+                if stripped and (stripped.startswith("=") or stripped.startswith("#")):  # Comment/empty lines are ignored
                     if flag == 0:
                         flag = 1
                 elif stripped:
                     flag = 0
-                    data = line + data
+                    new_line = "\n"
+                    if not data: new_line = ""
+                    data = stripped + new_line + data
     return data

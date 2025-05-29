@@ -3,23 +3,22 @@ import pytest
 @pytest.fixture
 def raw_user_data():
     mocked_raw_data = """2045-07-03
-    - 2h Do some important stuff! IPJ-170
-    - 6h Requirements Workshop! ISTN-87
-    2045-07-04
-    - 8h Vacation INT-762
-    2045-07-05
-    - 0.5h Daily Scrum IPJ-101
-    - 1.5h Code reviews IPJ-117
-    - 4h Requirements Workshop! ISTN-87
-    - 2h Shuttle testing ISTN-221
-    2045-07-06
-    - 8h Vacation INT-762
-    2045-07-07
-    - 0.5h Daily Scrum IPJ-101
-    - 2h Backlog Refinement IPJ-207
-    - 2.5h Sprint Planning IPJ-271
-    - 3h Shuttle testing ISTN-221
-    """
+- 2h Do some important stuff! IPJ-170
+- 6h Requirements Workshop! ISTN-87
+2045-07-04
+- 8h Vacation INT-762
+2045-07-05
+- 0.5h Daily Scrum IPJ-101
+- 1.5h Code reviews IPJ-117
+- 4h Requirements Workshop! ISTN-87
+- 2h Shuttle testing ISTN-221
+2045-07-06
+- 8h Vacation INT-762
+2045-07-07
+- 0.5h Daily Scrum IPJ-101
+- 2h Backlog Refinement IPJ-207
+- 2.5h Sprint Planning IPJ-271
+- 3h Shuttle testing ISTN-221"""
 
     return mocked_raw_data
 
