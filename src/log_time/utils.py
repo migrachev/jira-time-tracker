@@ -113,7 +113,6 @@ def in_conflict_with_previous_execution(logs: list[str]) -> bool:
     with open(file_path, "r") as logs_file:
         result = False
         for line in list(logs_file):
-            print(line)
             if line in logs:
                 result = True
         return result

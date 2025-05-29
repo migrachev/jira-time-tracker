@@ -76,7 +76,6 @@ def log_time(user_data: UserData, jira_host_name: str) -> bool:
         return True
     
 def is_reachable(hostname: str) -> bool:
-    # Define the ping command based on the operating system
     flag: str = "-c" if platform.system() != "Windows" else "-n"
     ping_command: list[str] = ["ping", flag, "1", hostname]
 

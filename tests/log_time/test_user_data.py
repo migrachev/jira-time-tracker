@@ -70,10 +70,5 @@ def test_get_file(
     mocked_open = mocker.mock_open(read_data=already_logged_data_from_file)
     mocker.patch("builtins.open", mocked_open)
     data = get("")
-    print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-    print(data)
-    print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-    print(raw_user_data)
-    print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
 
     assert data == raw_user_data
