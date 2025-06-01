@@ -14,10 +14,10 @@ from .utils import start_spinner_thread
 from ..config import Config
 
 def log_time(user_data: UserData) -> bool:
-    jira_host_name = Config.get("jira_host_name")
+    jira_domain_name = Config.get("jira_domain_name")
     loading_reachable_check_event: Event = Event()
     start_spinner_thread(loading_reachable_check_event)
-    if not is_reachable(jira_host_name):
+    if not is_reachable(jira_domain_name):
         print("\033[31m\rJIRA instalation unreachable! Check your VPN status and/or connectivity!\033[0m")
         return False
     else:
@@ -29,7 +29,7 @@ def log_time(user_data: UserData) -> bool:
             auth: HTTPBasicAuth = HTTPBasicAuth(username, password)
             loading_credentials_check_event: Event = Event()
             start_spinner_thread(loading_credentials_check_event)
-            if is_valid_authentication(auth, jira_host_name):
+            if is_valid_authentication(auth, jira_domain_name):
                 break
             else:
                 print("\033[31m\rIncorrect credentials!\033[0m")
@@ -47,7 +47,7 @@ def log_time(user_data: UserData) -> bool:
                 time_spent_seconds: float = time_spent_hours * 60 * 60
                 print(f"About to log \033[32m{time}\033[0m hours for \033[32m{day}\033[0m in issue \033[32m{issue}\033[0m with comment \033[32m{comment}\033[0m")
                 request: WorkLogRequest = {
-                    "url": f"https://{jira_host_name}:443/rest/api/2/issue/{issue}/worklog",
+                    "url": f"https://{jira_domain_name}:443/rest/api/2/issue/{issue}/worklog",
                     "body": {
                         "started": started,
                         "comment": comment,
@@ -88,8 +88,8 @@ def is_reachable(hostname: str) -> bool:
     except subprocess.CalledProcessError:
         return False
     
-def is_valid_authentication(auth: HTTPBasicAuth, jira_host_name: str) -> bool:
-    url = f"https://{jira_host_name}:443/rest/api/2/myself"
+def is_valid_authentication(auth: HTTPBasicAuth, jira_domain_name: str) -> bool:
+    url = f"https://{jira_domain_name}:443/rest/api/2/myself"
     try:
         response: Response = requests.get(url, auth=auth)
         response.raise_for_status()  # Raise an error for bad responses (4xx, 5xx)
