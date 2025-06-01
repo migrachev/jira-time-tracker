@@ -7,6 +7,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import KeysView
 from threading import Event
+from .mytypes import UserData
 
 from .mytypes import UserData
 
