@@ -81,8 +81,8 @@ def get() -> str:
         data = prompt("Paste your input here!")
         data = data.strip()
     else:
-        default_file_location = Config.get("default_file_location")
-        file_location: str = prompt("Please provide the file location: ", default=default_file_location)
+        default_logs_location = Config.get("default_logs_location")
+        file_location: str = prompt("Please provide the file location: ", default=default_logs_location)
         with open(file_location, 'r', encoding='utf-8') as data_file:
             data_file: TextIO
             flag: int = -1

@@ -3,6 +3,7 @@ import readchar
 def test_validate(
         mocker, 
         logs,
+        config,
         another_logs, 
         parsed_user_data, 
         improper_parsed_user_data_days, 
@@ -12,8 +13,18 @@ def test_validate(
 ):
     from src.log_time.user_data import validate
 
-    mocked_open = mocker.mock_open(read_data="\n".join(another_logs))
-    mocker.patch("builtins.open", mocked_open)
+    mocker.patch("os.path.isfile", return_value=True)
+
+    def mock_open_side_effect_success(filename, mode="r"):
+        if "data-hash-logs.log" in str(filename):
+            hash_logs_mock = mocker.mock_open(read_data="\n".join(another_logs))
+            return hash_logs_mock.return_value
+        elif "config.json" in str(filename):
+            config_mock = mocker.mock_open(read_data=config)
+            return config_mock.return_value
+        else:
+            raise FileNotFoundError(f"File not found: {filename}")
+    mocker.patch("builtins.open", side_effect=mock_open_side_effect_success)
 
     assert validate(parsed_user_data) is True
     assert validate(improper_parsed_user_data_days) is False
@@ -21,8 +32,16 @@ def test_validate(
     assert validate(improper_parsed_user_data_sum) is False
     assert validate(improper_parsed_user_data_times) is False
 
-    mocked_open = mocker.mock_open(read_data="\n".join(logs))
-    mocker.patch("builtins.open", mocked_open)
+    def mock_open_side_effect_failure(filename, mode="r"):
+        if "data-hash-logs.log" in str(filename):
+            hash_logs_mock = mocker.mock_open(read_data="\n".join(logs))
+            return hash_logs_mock.return_value
+        elif "config.json" in str(filename):
+            config_mock = mocker.mock_open(read_data=config)
+            return config_mock.return_value
+        else:
+            raise FileNotFoundError(f"File not found: {filename}")
+    mocker.patch("builtins.open", side_effect=mock_open_side_effect_failure)
 
     assert validate(parsed_user_data) is False
 

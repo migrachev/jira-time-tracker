@@ -1,10 +1,12 @@
 import json
 from pathlib import Path
 
+APP_DATA = Path.home() / ".jttconfig"
+
 class Config:
     _instance = None
     _data: dict = {}
-    CONFIG_PATH = Path.home() / ".jttconfig/config.json"
+    CONFIG_PATH = APP_DATA / "config.json"
 
     def __new__(cls):
         if cls._instance is None:
@@ -14,6 +16,9 @@ class Config:
     
     def __bool__(self) -> bool:
         return bool(self._data)
+    
+    def __str__(self) -> str:
+        return json.dumps(self._data)
 
     @classmethod
     def _load(cls):

@@ -12,6 +12,7 @@ from .fixtures.input_fixtures import already_logged_data_from_file
 from .fixtures.input_fixtures import already_logged_data_from_paste
 from .fixtures.input_fixtures import new_data_from_file
 from .fixtures.input_fixtures import new_data_from_paste
+from .fixtures.config_fixtures import config
 
 @pytest.fixture
 def work_log():

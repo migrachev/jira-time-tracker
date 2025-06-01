@@ -1,4 +1,5 @@
 import re
+import os
 import itertools
 import sys
 import time
@@ -8,6 +9,7 @@ from pathlib import Path
 from typing import KeysView
 from threading import Event
 from .mytypes import UserData
+from ..config import APP_DATA
 
 def parse_iso_date(date_str: str) -> tuple[int, int, int]:
     year, month, day = map(int, date_str.split("-"))
@@ -107,15 +109,16 @@ def is_fully_logged_week(data: UserData): #expects already checked data with are
     return total == 40
     
 def in_conflict_with_previous_execution(logs: list[str]) -> bool:
-    script_dir: Path = Path(__file__).parent
-    root_dir: Path = script_dir.parent.parent
-    file_path: Path = root_dir / "data-hash-logs.log"
-    with open(file_path, "r") as logs_file:
-        result = False
-        for line in list(logs_file):
-            if line in logs:
-                result = True
-        return result
+    file_path: Path = APP_DATA / "data-hash-logs.log"
+    result = False
+    if os.path.isfile(file_path): 
+        with open(file_path, "r") as logs_file:
+            result = False
+            for line in list(logs_file):
+                if line in logs:
+                    result = True
+            return result
+    return result
     
 def spinner(loading_event: Event):
     for symbol in itertools.cycle(["Processing |", "Processing /", "Processing -", "Processing \\"]):
