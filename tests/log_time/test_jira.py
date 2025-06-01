@@ -1,6 +1,8 @@
 import subprocess
 import requests
+import re
 from requests.auth import HTTPBasicAuth
+from unittest.mock import ANY
 
 def test_log_time_full_success(mocker, parsed_user_data):
     username = "john.doe@example.com"
@@ -21,17 +23,18 @@ def test_log_time_full_success(mocker, parsed_user_data):
     mock_requests_post = mocker.patch("src.log_time.jira.requests.post", return_value=mock_response)
 
     from src.log_time.jira import log_time
-    jira_host_name = "example.com"
-    result = log_time(parsed_user_data, jira_host_name)
+    result = log_time(parsed_user_data)
 
+    # Check result
     assert result is True
-    mock_subprocess.assert_called_once_with(
-        ["ping", "-c", "1", "example.com"],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-        check=True
-    )
-    mock_requests_get.assert_called_once_with("https://example.com:443/rest/api/2/myself", auth=HTTPBasicAuth(username, password))
+    # Check proper JIRA availability check
+    assert mock_subprocess.call_count == 1
+    # Check proper JIRA authentication
+    mock_requests_get.assert_called_once_with(ANY, auth=HTTPBasicAuth(username, password))
+    pattern = r"^https://.*/rest/api/2/myself$"
+    args, _ = mock_requests_get.call_args
+    assert bool(re.fullmatch(pattern, args[0])) is True
+    # Check proper number of logs requeted
     assert mock_requests_post.call_count == 12
 
 def test_is_reachable_success_linux(mocker):

@@ -7,6 +7,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import KeysView
 from threading import Event
+
 from .mytypes import UserData
 
 def parse_iso_date(date_str: str) -> tuple[int, int, int]:
