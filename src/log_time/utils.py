@@ -9,8 +9,6 @@ from typing import KeysView
 from threading import Event
 from .mytypes import UserData
 
-from .mytypes import UserData
-
 def parse_iso_date(date_str: str) -> tuple[int, int, int]:
     year, month, day = map(int, date_str.split("-"))
     return year, month, day
