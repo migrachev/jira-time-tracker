@@ -7,6 +7,7 @@ from .utils import parse_iso_date, is_valid_date, split_work_log, in_conflict_wi
 from .utils import is_proper_work_week, are_jira_identifiers_valid, are_times_valid, is_fully_logged_week
 from .mytypes import UserData
 from ..config import Config
+from ..console import demand_choice
 
 def validate(user_data: UserData):
     is_valid = True
@@ -50,39 +51,20 @@ def parse(string_data: str) -> UserData:
     return parsed
 
 def get() -> str:
-    options: list[str] = [
-        "Refer data from file.", 
-        "Paste data as text."
-    ]
-    index: int = 0
-
-    while True:
-        print("How do you want to supply us with the data to process?\n")
-        i: int; option: str
-        for i, option in enumerate(options):
-            if i == index:
-                print(f"> \033[32m{option}\033[0m")  # Highlight the selected option
-            else:
-                print(f"  {option}")
-
-        key: str = readchar.readkey() 
-
-        if key == readchar.key.UP or key == readchar.key.LEFT:
-            index = (index - 1) % len(options)
-        elif key == readchar.key.DOWN or key == readchar.key.RIGHT:
-            index = (index + 1) % len(options)
-        elif key == readchar.key.ENTER or key == "\r":
-            break  # Confirm selection
-
-        print("\033c", end="")  # Clear screen
+    title: str = "How do you want to supply us with the data to process?"
+    options: dict[str, str] = {
+        "file": "Refer data from file.",
+        "paste": "Paste data as text."
+    }
+    choice: str = demand_choice(title, options)
 
     data: str = ""
-    if index:
+    if choice == "paste":
         data = prompt("Paste your input here!")
         data = data.strip()
     else:
-        default_file_location = Config.get("default_file_location")
-        file_location: str = prompt("Please provide the file location: ", default=default_file_location)
+        default_logs_location = Config.get("default_logs_location")
+        file_location: str = prompt("Please provide the file location: ", default=default_logs_location)
         with open(file_location, 'r', encoding='utf-8') as data_file:
             data_file: TextIO
             flag: int = -1

@@ -1,6 +1,8 @@
 from pathlib import Path
 from unittest.mock import call
 
+from src.config import APP_DATA
+
 def test_generate(parsed_user_data):
     from src.log_time.hash import generate
 
@@ -29,9 +31,7 @@ def test_save(mocker, logs):
     mocked_open = mocker.patch("builtins.open", mocker.mock_open())
     save(logs)
 
-    script_dir = Path(__file__).parent
-    root_dir = script_dir.parent.parent
-    file_path = root_dir / "data-hash-logs.log"
+    file_path = APP_DATA / "data-hash-logs.log"
     mocked_open.assert_called_once_with(file_path, "w")
     
     assert call(logs[0]) in mocked_open().write.call_args_list

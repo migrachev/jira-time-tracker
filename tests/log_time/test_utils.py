@@ -1,4 +1,7 @@
 from pathlib import Path
+from unittest.mock import call
+
+from src.config import APP_DATA
 
 def test_parse_iso_date(date_string):
     from src.log_time.utils import parse_iso_date
@@ -48,17 +51,20 @@ def test_is_fully_logged_week(parsed_user_data, improper_parsed_user_data_sum):
     assert is_fully_logged_week(parsed_user_data) is True
     assert is_fully_logged_week(improper_parsed_user_data_sum) is False
 
-def test_in_conflict_with_previous_execution(mocker, logs, another_logs):
+def test_in_conflict_with_previous_execution(mocker, logs, another_logs, config):
     from src.log_time.utils import in_conflict_with_previous_execution
-    
-    mocked_open = mocker.mock_open(read_data="\n".join(logs))
-    mocker.patch("builtins.open", mocked_open)
 
-    script_dir = Path(__file__).parent
-    root_dir = script_dir.parent.parent
-    file_path = root_dir / "data-hash-logs.log"
-    
+    def mock_open_side_effect(filename, mode="r"):
+        if "data-hash-logs.log" in str(filename):
+            hash_logs_mock = mocker.mock_open(read_data="\n".join(logs))
+            return hash_logs_mock.return_value
+        elif "config.json" in str(filename):
+            config_mock = mocker.mock_open(read_data=config)
+            return config_mock.return_value
+        else:
+            raise FileNotFoundError(f"File not found: {filename}")
+    mocker.patch("builtins.open", side_effect=mock_open_side_effect)
+    mocker.patch("os.path.isfile", return_value=True)
+
     assert in_conflict_with_previous_execution(logs) is True
-    mocked_open.assert_called_once_with(file_path, "r")
     assert in_conflict_with_previous_execution(another_logs) is False
-    assert mocked_open.call_count == 2

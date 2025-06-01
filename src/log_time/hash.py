@@ -2,6 +2,7 @@ from pathlib import Path
 import hashlib
 
 from .mytypes import UserData
+from ..config import APP_DATA
 
 def generate(data: UserData) -> list[str]:
     logs: list[str] = []
@@ -17,9 +18,7 @@ def generate(data: UserData) -> list[str]:
     return logs
 
 def save(logs: list[str]):
-    script_dir: Path = Path(__file__).parent
-    root_dir: Path = script_dir.parent.parent
-    file_path: Path = root_dir / "data-hash-logs.log"
+    file_path: Path = APP_DATA / "data-hash-logs.log"
     with open(file_path, 'w') as file:
         index: int; log: str
         for index, log in enumerate(logs):
