@@ -1,10 +1,12 @@
 import readchar
 from prompt_toolkit import prompt
 from typing import TextIO, Iterator
+
 from . import hash
 from .utils import parse_iso_date, is_valid_date, split_work_log, in_conflict_with_previous_execution
 from .utils import is_proper_work_week, are_jira_identifiers_valid, are_times_valid, is_fully_logged_week
 from .mytypes import UserData
+from ..config import Config
 
 def validate(user_data: UserData):
     is_valid = True
@@ -47,7 +49,7 @@ def parse(string_data: str) -> UserData:
 
     return parsed
 
-def get(default_file_location: str) -> str:
+def get() -> str:
     options: list[str] = [
         "Refer data from file.", 
         "Paste data as text."
@@ -79,6 +81,7 @@ def get(default_file_location: str) -> str:
         data = prompt("Paste your input here!")
         data = data.strip()
     else:
+        default_file_location = Config.get("default_file_location")
         file_location: str = prompt("Please provide the file location: ", default=default_file_location)
         with open(file_location, 'r', encoding='utf-8') as data_file:
             data_file: TextIO

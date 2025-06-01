@@ -8,10 +8,13 @@ from datetime import date
 from threading import Event
 from subprocess import CompletedProcess
 from requests import Response
+
 from .mytypes import UserData, WorkLog, WorkLogRequest
 from .utils import start_spinner_thread
+from ..config import Config
 
-def log_time(user_data: UserData, jira_host_name: str) -> bool:
+def log_time(user_data: UserData) -> bool:
+    jira_host_name = Config.get("jira_host_name")
     loading_reachable_check_event: Event = Event()
     start_spinner_thread(loading_reachable_check_event)
     if not is_reachable(jira_host_name):

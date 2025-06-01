@@ -49,7 +49,7 @@ def test_get_paste(mocker, already_logged_data_from_paste, raw_user_data):
     mocker.patch("src.log_time.user_data.readchar.readkey", side_effect=[down, enter])
     mock_prompt = mocker.patch("src.log_time.user_data.prompt")
     mock_prompt.return_value = already_logged_data_from_paste
-    data = get("")
+    data = get()
 
     assert data == raw_user_data
 
@@ -69,6 +69,6 @@ def test_get_file(
     mock_prompt.return_value = filename
     mocked_open = mocker.mock_open(read_data=already_logged_data_from_file)
     mocker.patch("builtins.open", mocked_open)
-    data = get("")
+    data = get()
 
     assert data == raw_user_data

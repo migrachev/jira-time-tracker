@@ -1,5 +1,6 @@
 from pathlib import Path
 import hashlib
+
 from .mytypes import UserData
 
 def generate(data: UserData) -> list[str]:
