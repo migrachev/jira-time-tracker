@@ -3,9 +3,9 @@ import sys
 from . import hash
 from . import user_data
 from . import jira
-from . import configure
 from .mytypes import UserData
 from ..config import Config
+from .. import configure
 
 command_line_arguments: list[str] = sys.argv[1:]
 with_config_flag = "--config" in command_line_arguments

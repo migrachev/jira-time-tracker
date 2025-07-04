@@ -1,0 +1,2646 @@
+{
+    "Header": {
+        "ServerVersionInfo": {
+            "MajorVersion": 15,
+            "MinorVersion": 20,
+            "MajorBuildNumber": 8792,
+            "MinorBuildNumber": 35,
+            "Version": "V2018_01_08"
+        }
+    },
+    "Body": {
+        "Items": [
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E90609388BC2871598DB01000000000000000010000000AC8CDB2CACD03040B451D0C8CE31FE84",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6D+TQ",
+                    "Id": "AAkBOQAICN2m6JPfgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNALV+QiLFJYtArWLNx35Q35kABEbMZcsAABA="
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-09T09:30:00+03:00",
+                "ItemClass": "IPM.Appointment.Occurrence",
+                "End": "2025-06-09T09:33:00+03:00",
+                "Subject": "[Reminder] Time Approval ",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Tentative",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": true,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Occurrence",
+                "ResponseType": "NoResponseReceived",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Krum Zahariev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=78447097D6E4425E997380734364CD62-7BA80D2F-07",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_MmFlZDJjNjctODNjZi00NzRjLTkyOTMtMWRlZTEzYzcyNWE3@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAERsuB0wAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "Hi everyone,\r\n\r\nKind reminder to approve the time submitted by your colleagues to you and to submit your own time for approval today.\r\n\r\nBest regards,\r\n\r\nKrum\r\n\r\n________________________________________________________________________________\r\nMicrosoft T",
+                "IsOrganizer": false,
+                "IsSeriesCancelled": false,
+                "Charm": "None",
+                "SeriesId": "040000008200E00074C5B7101A82E00800000000388BC2871598DB01000000000000000010000000AC8CDB2CACD03040B451D0C8CE31FE84",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAERsxlywAA"
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_MmFlZDJjNjctODNjZi00NzRjLTkyOTMtMWRlZTEzYzcyNWE3@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0}",
+                "MuteNotifications": false,
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E90609904FC3EF319FDB010000000000000000100000007A84010938C85D41A934335B87DE446A",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6D+gL",
+                    "Id": "AAkBOQAICN2m6JPfgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNALV+QiLFJYtArWLNx35Q35kABE3lr4AAABA="
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-09T10:00:00+03:00",
+                "ItemClass": "IPM.Appointment.Occurrence",
+                "End": "2025-06-09T10:30:00+03:00",
+                "Subject": "EL Team daily",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": true,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Occurrence",
+                "ResponseType": "Accept",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Lyubomir Stoilkov",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=F8A88E4A24694B5EB88711146EA99665-15F6643F-20",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_NDAwMDlmN2YtZjM2Ny00YmRlLWE4NDgtZWRhYmFhZTM0MmQx@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAETeUUOgAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "Jira Agile EL Board: Agile EL - Agile Board - Production\r\n\r\nScrum Guide Reference:\r\n\r\nThe purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.\r\n\r\nThe Daily",
+                "IsOrganizer": false,
+                "IsSeriesCancelled": false,
+                "Charm": "None",
+                "SeriesId": "040000008200E00074C5B7101A82E00800000000904FC3EF319FDB010000000000000000100000007A84010938C85D41A934335B87DE446A",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAETeWvgAAA"
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_NDAwMDlmN2YtZjM2Ny00YmRlLWE4NDgtZWRhYmFhZTM0MmQx@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E008000000003CA77E9D0CD9DB010000000000000000100000005113222847225D4EAC13960FFC2493F6",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6D+gI",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHb07QAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-09T10:30:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-09T11:30:00+03:00",
+                "Subject": "Sync with Ayhan on TUIB and next steps",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": true,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": false,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_YTA5NzNkMDItOGM3OS00NWM0LWI3ODAtY2FlMjVmYTA0NWIw@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUzqQAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 342 608 346 774 0\r\nPasscode: ri9xV6oJ\r\n________________________________\r\nFor organizers: Meeting options",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_YTA5NzNkMDItOGM3OS00NWM0LWI3ODAtY2FlMjVmYTA0NWIw@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E008000000003620674E14D9DB010000000000000000100000001BC3AAFB8BB2AE45A5D770212FC47191",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6D/TH",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHb/CQAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-09T14:00:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-09T15:00:00+03:00",
+                "Subject": "[beYs] EL - TUIB npm start + reusable table",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": true,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": false,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_OGI4OTFhZGEtZTFhZi00NTI2LTlmOTktZGMxZDU1ODEyYWY1@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUzqgAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 343 136 673 528 1\r\nPasscode: sc3fV2Ai\r\n________________________________\r\nFor organizers: Meeting options",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_OGI4OTFhZGEtZTFhZi00NTI2LTlmOTktZGMxZDU1ODEyYWY1@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E008000000008D2672703CD9DB01000000000000000010000000BD91D7E3D03E7C46A9D3AB4FA5EDE6A7",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6D/ld",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHcZHwAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-09T15:00:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-09T16:00:00+03:00",
+                "Subject": "continue",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": false,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_MWQxMDhjZWEtMDM2Mi00NmI2LWIzZGEtNzAxMzFhYzg0Y2Ux@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUzqwAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 388 243 320 904\r\nPasscode: g5CP7k3o\r\n________________________________\r\nFor organizers: Meeting options\r\n_",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_MWQxMDhjZWEtMDM2Mi00NmI2LWIzZGEtNzAxMzFhYzg0Y2Ux@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00800000000982BB46ACBD9DB0100000000000000001000000029AED68F0D8637479035A5AC07C292E0",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6EDUX",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHdhRQAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-09T16:00:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-09T16:30:00+03:00",
+                "Subject": "[beYs] Sapphire - define proper format and place for documentation ",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": false,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_MjA5NDg2YTYtNGE2My00MmQ4LWJmNjQtYWE4Y2U5YTg2MThl@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUzrgAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 321 663 390 373 3\r\nPasscode: d8B7Jb6A\r\n________________________________\r\nFor organizers: Meeting options",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_MjA5NDg2YTYtNGE2My00MmQ4LWJmNjQtYWE4Y2U5YTg2MThl@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E008000000006AB40D70CBD9DB010000000000000000100000001829727E327FB145AC23D558C9613E3C",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6EDUa",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHdhTQAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-09T16:30:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-09T17:00:00+03:00",
+                "Subject": "continue",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": false,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_YWNjZmI5ZGItOTlhYy00ODE0LWJlYzgtMGQzOTkwM2NhMzNk@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUzrwAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 349 478 758 448 4\r\nPasscode: ss2Eo2yP\r\n________________________________\r\nFor organizers: Meeting options",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_YWNjZmI5ZGItOTlhYy00ODE0LWJlYzgtMGQzOTkwM2NhMzNk@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E008000000009A6A1C4BD3D9DB010000000000000000100000008257B7D0F14367489CEBA2E71D3A7590",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6EDcc",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHdiCQAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-10T09:00:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-10T10:00:00+03:00",
+                "Subject": "[beYs] Sapphire - auto publishing in BeIAM",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": false,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_ZmI3NzZmNzctYzIzZS00NGE1LTliMDYtODJhYTZiNmQ1Y2U2@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUzsAAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 329 291 161 964 7\r\nPasscode: TJ38jM9d\r\n________________________________\r\nFor organizers: Meeting options",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_ZmI3NzZmNzctYzIzZS00NGE1LTliMDYtODJhYTZiNmQ1Y2U2@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E9060A904FC3EF319FDB010000000000000000100000007A84010938C85D41A934335B87DE446A",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6D+gL",
+                    "Id": "AAkBOQAICN2nsb5JQAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNALV+QiLFJYtArWLNx35Q35kABE3lr4AAABA="
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-10T10:00:00+03:00",
+                "ItemClass": "IPM.Appointment.Occurrence",
+                "End": "2025-06-10T10:30:00+03:00",
+                "Subject": "EL Team daily",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": true,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Occurrence",
+                "ResponseType": "Accept",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Lyubomir Stoilkov",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=F8A88E4A24694B5EB88711146EA99665-15F6643F-20",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_NDAwMDlmN2YtZjM2Ny00YmRlLWE4NDgtZWRhYmFhZTM0MmQx@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAETeUUOgAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "Jira Agile EL Board: Agile EL - Agile Board - Production\r\n\r\nScrum Guide Reference:\r\n\r\nThe purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.\r\n\r\nThe Daily",
+                "IsOrganizer": false,
+                "IsSeriesCancelled": false,
+                "Charm": "None",
+                "SeriesId": "040000008200E00074C5B7101A82E00800000000904FC3EF319FDB010000000000000000100000007A84010938C85D41A934335B87DE446A",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAETeWvgAAA"
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_NDAwMDlmN2YtZjM2Ny00YmRlLWE4NDgtZWRhYmFhZTM0MmQx@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00800000000EE2871B33DD9DB010000000000000000100000003A74D6D5BBBF5743A01B16E5FC101715",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6EAxl",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHcZKQAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-10T10:30:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-10T12:00:00+03:00",
+                "Subject": "[beYs] EL - understanding Trust UI Blocks",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": true,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_NDIxYTBmZjktYzZlZi00NmY2LTljMjEtMzIwYWI4Y2ViMjE4@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUzrAAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 379 778 532 579 5\r\nPasscode: g6o37zr7\r\n________________________________\r\nFor organizers: Meeting options",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_NDIxYTBmZjktYzZlZi00NmY2LTljMjEtMzIwYWI4Y2ViMjE4@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E008000000002D62A0AAEED9DB01000000000000000010000000C2D1CBB11EF64341A4696C499956D731",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6EEob",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHeIJgAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-10T12:00:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-10T13:00:00+03:00",
+                "Subject": "[beYs] Sapphire - auto publishing in BeIAM",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": false,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_Nzg4OTIzMzItY2IwNC00NTBjLWE2MTAtY2FiMzNjNTU1Y2My@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUzsQAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 320 482 255 321 2\r\nPasscode: R77bi6NR\r\n________________________________\r\nFor organizers: Meeting options",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_Nzg4OTIzMzItY2IwNC00NTBjLWE2MTAtY2FiMzNjNTU1Y2My@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00800000000FE55F2391DDADB010000000000000000100000007FE68D8F48D73F4EB9C7AD6CBBF877F0",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6EF7N",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHenjAAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-10T14:00:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-10T15:00:00+03:00",
+                "Subject": "[beYs] Sapphire - auto publishing in Wallet WebViews",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": false,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_MzIwZjY2ODAtZGE0Yi00MmM4LTk5ZGYtMWNiZWE0MDY5ZGYx@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUztQAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 365 317 766 805\r\nPasscode: 9zB9Bc3n\r\n________________________________\r\nFor organizers: Meeting options\r\n_",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_MzIwZjY2ODAtZGE0Yi00MmM4LTk5ZGYtMWNiZWE0MDY5ZGYx@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E9060A3AE6AB9D85C9DB010000000000000000100000004981D705CECCB44EB614D61363C2B4E5",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6EFX0",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHca+AAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-10T15:00:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-10T16:00:00+03:00",
+                "Subject": "Bi-weekly product team sync",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Tentative",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "ResponseType": "NoResponseReceived",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Martin Tsotchev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=C8C184B6F93946158248DC1258995EE7-C6C8A3E7-5B",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_Zjg5MjFlMTItYWI0Zi00ZjY2LTliNGYtYzI0NDI0NzlkYjI1@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUzrQAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________\r\nFrom: Martin Tsotchev <m.tsotchev@tinqin.com>\r\nSent: Sunday, June 8, 2025 1:01:48 PM (UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius\r\nTo: Martin Tsotchev <m.tsotchev@tinqin.com>; Ana Boshnyakova <a.boshnyakova",
+                "IsOrganizer": false,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_Zjg5MjFlMTItYWI0Zi00ZjY2LTliNGYtYzI0NDI0NzlkYjI1@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0}",
+                "MuteNotifications": false,
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00800000000F01539221DDADB010000000000000000100000008BABE995749C9146A9AA5C807C32FA07",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6EF7G",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHengAAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-10T16:00:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-10T17:00:00+03:00",
+                "Subject": "[beYs] Sapphire - auto publishing in NomDel",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": false,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_NzBjNWM1ZDEtYjFjOC00YzNhLTk2N2EtZWE2Zjg3MDg4M2I5@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUztAAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 314 108 260 026 8\r\nPasscode: bY9Ur3vk\r\n________________________________\r\nFor organizers: Meeting options",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_NzBjNWM1ZDEtYjFjOC00YzNhLTk2N2EtZWE2Zjg3MDg4M2I5@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00800000000BBEDDAFA1DDADB01000000000000000010000000219E1CFFFD26D6428EC2FC3752465062",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6EF/6",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHepRQAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-11T09:00:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-11T10:00:00+03:00",
+                "Subject": "[beYs] Sapphire - auto publishing in Insurance Life",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": false,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_OTFiZGQyODYtMDUxZS00ODI1LWE1NDYtZDlkZWVkN2IwMmQ1@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUztgAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 331 450 187 231 6\r\nPasscode: rN64T952\r\n________________________________\r\nFor organizers: Meeting options",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_OTFiZGQyODYtMDUxZS00ODI1LWE1NDYtZDlkZWVkN2IwMmQ1@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E9060B1083817CCA86DB0100000000000000001000000055C2C99567A2A54EAB1E277CF36667A3",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR0pD8m",
+                    "Id": "AAkBOQAICN2oeuizAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNALV+QiLFJYtArWLNx35Q35kABDh8y7AAABA="
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-11T09:30:00+03:00",
+                "ItemClass": "IPM.Appointment.Occurrence",
+                "End": "2025-06-11T09:33:00+03:00",
+                "Subject": "[Reminder] Staffing Update",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Tentative",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": true,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Occurrence",
+                "ResponseType": "NoResponseReceived",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Krum Zahariev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=78447097D6E4425E997380734364CD62-7BA80D2F-07",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_MWU3MzE0M2ItNjE1YS00ZjJiLTk3YWQtYzFjZTZiYjk4M2Zj@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEOHyt2AAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "Hi everyone,\r\n\r\nThis is a bi-weekly reminder to review and update (when needed) the capacity of cross-team shared colleagues who are under your direct management.\r\n\r\nAs we agreed you do not have to updated them directly into to the staffing table but to s",
+                "IsOrganizer": false,
+                "IsSeriesCancelled": false,
+                "Charm": "None",
+                "SeriesId": "040000008200E00074C5B7101A82E008000000001083817CCA86DB0100000000000000001000000055C2C99567A2A54EAB1E277CF36667A3",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEOHzLsAAA"
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_MWU3MzE0M2ItNjE1YS00ZjJiLTk3YWQtYzFjZTZiYjk4M2Zj@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0}",
+                "MuteNotifications": false,
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E9060B904FC3EF319FDB010000000000000000100000007A84010938C85D41A934335B87DE446A",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6D+gL",
+                    "Id": "AAkBOQAICN2oeuizAAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNALV+QiLFJYtArWLNx35Q35kABE3lr4AAABA="
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-11T10:00:00+03:00",
+                "ItemClass": "IPM.Appointment.Occurrence",
+                "End": "2025-06-11T10:30:00+03:00",
+                "Subject": "EL Team daily",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": true,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Occurrence",
+                "ResponseType": "Accept",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Lyubomir Stoilkov",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=F8A88E4A24694B5EB88711146EA99665-15F6643F-20",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_NDAwMDlmN2YtZjM2Ny00YmRlLWE4NDgtZWRhYmFhZTM0MmQx@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAETeUUOgAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "Jira Agile EL Board: Agile EL - Agile Board - Production\r\n\r\nScrum Guide Reference:\r\n\r\nThe purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.\r\n\r\nThe Daily",
+                "IsOrganizer": false,
+                "IsSeriesCancelled": false,
+                "Charm": "None",
+                "SeriesId": "040000008200E00074C5B7101A82E00800000000904FC3EF319FDB010000000000000000100000007A84010938C85D41A934335B87DE446A",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAETeWvgAAA"
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_NDAwMDlmN2YtZjM2Ny00YmRlLWE4NDgtZWRhYmFhZTM0MmQx@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E008000000003552350C1EDADB0100000000000000001000000026AB5D3960F0C84DB74FE2496152126D",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6EF/9",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEfHepTQAA"
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-11T14:00:00+03:00",
+                "ItemClass": "IPM.Appointment",
+                "End": "2025-06-11T15:00:00+03:00",
+                "Subject": "[beYs] Sapphire - auto publishing in eRDS",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": false,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": false,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Single",
+                "IsDraft": false,
+                "ResponseType": "Organizer",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Milen Igrachev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=87D244A6D1E54AF9B875D1AD5F3D0A09-M.IGRACHEV",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_N2JhZjFmODktMDdmNi00MmJmLTgwMzUtYzI5NGJiNzU5ODcz@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEfHUztwAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 312 748 422 459 2\r\nPasscode: 4TV6fx76\r\n________________________________\r\nFor organizers: Meeting options",
+                "IsOrganizer": true,
+                "Charm": "None",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": null
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_N2JhZjFmODktMDdmNi00MmJmLTgwMzUtYzI5NGJiNzU5ODcz@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0,\"ct\":null,\"btid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E9060C904FC3EF319FDB010000000000000000100000007A84010938C85D41A934335B87DE446A",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6D+gL",
+                    "Id": "AAkBOQAICN2pRBMcwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNALV+QiLFJYtArWLNx35Q35kABE3lr4AAABA="
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-12T10:00:00+03:00",
+                "ItemClass": "IPM.Appointment.Occurrence",
+                "End": "2025-06-12T10:30:00+03:00",
+                "Subject": "EL Team daily",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": true,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Occurrence",
+                "ResponseType": "Accept",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Lyubomir Stoilkov",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=F8A88E4A24694B5EB88711146EA99665-15F6643F-20",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_NDAwMDlmN2YtZjM2Ny00YmRlLWE4NDgtZWRhYmFhZTM0MmQx@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAETeUUOgAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "Jira Agile EL Board: Agile EL - Agile Board - Production\r\n\r\nScrum Guide Reference:\r\n\r\nThe purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.\r\n\r\nThe Daily",
+                "IsOrganizer": false,
+                "IsSeriesCancelled": false,
+                "Charm": "None",
+                "SeriesId": "040000008200E00074C5B7101A82E00800000000904FC3EF319FDB010000000000000000100000007A84010938C85D41A934335B87DE446A",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAETeWvgAAA"
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_NDAwMDlmN2YtZjM2Ny00YmRlLWE4NDgtZWRhYmFhZTM0MmQx@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E9060C051E95028C36DB01000000000000000010000000A1E6F25317EFB04A9EA2ADE316E5268B",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6DqWC",
+                    "Id": "AAkBOQAICN2pRBMcwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNALV+QiLFJYtArWLNx35Q35kAA/WahmUAABA="
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-12T14:00:00+03:00",
+                "ItemClass": "IPM.Appointment.Occurrence",
+                "End": "2025-06-12T15:00:00+03:00",
+                "Subject": "Staffing Meeting",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": true,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Occurrence",
+                "ResponseType": "Accept",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Krum Zahariev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=78447097D6E4425E997380734364CD62-7BA80D2F-07",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_ZmRjOTE1NjAtZGU5NC00YzExLWI0Y2QtOWU1Yzg2OGIzZGM4@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAD9ZmTmQAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "Hello all,\r\n\r\n\r\n\r\nThe purpose of this meeting is:\r\n\r\n1. Align all with the current project needs (FTEs)\r\n\r\n2. Review and decide where to place the newcomers (to be finally confirmed from Jean Charles)\r\n\r\n3. Kick off onboarding\r\n\r\n\r\n\r\nFor the meeting we wi",
+                "IsOrganizer": false,
+                "IsSeriesCancelled": false,
+                "Charm": "None",
+                "SeriesId": "040000008200E00074C5B7101A82E00800000000051E95028C36DB01000000000000000010000000A1E6F25317EFB04A9EA2ADE316E5268B",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAD9ZqGZQAA"
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_ZmRjOTE1NjAtZGU5NC00YzExLWI0Y2QtOWU1Yzg2OGIzZGM4@thread.v2\",\"rid\":0,\"mid\":0,\"uid\":null,\"private\":true,\"type\":0}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E9060CF02ECA47349FDB010000000000000000100000006BE4F4B9FA3EAF4390FB2F782A82AA1E",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR3lWet",
+                    "Id": "AAkBOQAICN2pRBMcwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNALV+QiLFJYtArWLNx35Q35kABE3lr9IAABA="
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-12T14:30:00+03:00",
+                "ItemClass": "IPM.Appointment.Occurrence",
+                "End": "2025-06-12T16:00:00+03:00",
+                "Subject": "EL Backlog Refinement ",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Tentative",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": true,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Occurrence",
+                "ResponseType": "NoResponseReceived",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Lyubomir Stoilkov",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=F8A88E4A24694B5EB88711146EA99665-15F6643F-20",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_Njc3MWRkN2ItMmY5MC00ZmY2LTg0YjEtYWI2Nzk4ODk1NzM3@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAETeUUPQAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 342 894 377 125\r\nPasscode: kk2A5Vs9\r\n________________________________\r\nFor organizers: Meeting options\r\n_____",
+                "IsOrganizer": false,
+                "IsSeriesCancelled": false,
+                "Charm": "None",
+                "SeriesId": "040000008200E00074C5B7101A82E00800000000F02ECA47349FDB010000000000000000100000006BE4F4B9FA3EAF4390FB2F782A82AA1E",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAETeWv0gAA"
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_Njc3MWRkN2ItMmY5MC00ZmY2LTg0YjEtYWI2Nzk4ODk1NzM3@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E9060D904FC3EF319FDB010000000000000000100000007A84010938C85D41A934335B87DE446A",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6D+gL",
+                    "Id": "AAkBOQAICN2qDT2GgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNALV+QiLFJYtArWLNx35Q35kABE3lr4AAABA="
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-13T10:00:00+03:00",
+                "ItemClass": "IPM.Appointment.Occurrence",
+                "End": "2025-06-13T10:30:00+03:00",
+                "Subject": "EL Team daily",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Busy",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": true,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Occurrence",
+                "ResponseType": "Accept",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Lyubomir Stoilkov",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=F8A88E4A24694B5EB88711146EA99665-15F6643F-20",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_NDAwMDlmN2YtZjM2Ny00YmRlLWE4NDgtZWRhYmFhZTM0MmQx@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAETeUUOgAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "Jira Agile EL Board: Agile EL - Agile Board - Production\r\n\r\nScrum Guide Reference:\r\n\r\nThe purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.\r\n\r\nThe Daily",
+                "IsOrganizer": false,
+                "IsSeriesCancelled": false,
+                "Charm": "None",
+                "SeriesId": "040000008200E00074C5B7101A82E00800000000904FC3EF319FDB010000000000000000100000007A84010938C85D41A934335B87DE446A",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAETeWvgAAA"
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_NDAwMDlmN2YtZjM2Ny00YmRlLWE4NDgtZWRhYmFhZTM0MmQx@thread.v2\",\"private\":true,\"type\":0,\"mid\":0,\"rid\":0,\"uid\":null}",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E9060DB03F34D8B62EDB01000000000000000010000000BB4B04375942AE4A9310711EAD76AD0C",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6Dwol",
+                    "Id": "AAkBOQAICN2qDT2GgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNALV+QiLFJYtArWLNx35Q35kAA+9orvgAABA="
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-13T15:00:00+03:00",
+                "ItemClass": "IPM.Appointment.Occurrence",
+                "End": "2025-06-13T15:15:00+03:00",
+                "Subject": "!!! Reminder EL: Jira Time Tracking",
+                "Sensitivity": "Normal",
+                "Importance": "High",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Tentative",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": true,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": false,
+                "CalendarItemType": "Occurrence",
+                "ResponseType": "NoResponseReceived",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Stanislava Ezekieva",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=173E2DB3E72A4E3FA99EF578B467D316-403AB080-6E",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": ""
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAD72h7aAAAAAA=",
+                "Location": {
+                    "DisplayName": "Personal Laptop; )",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Personal Laptop; )",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "Hey Team 😊,\r\n\r\nKind reminder to book your time in Jira Tempo for the current week.\r\nFinance department needs time tracking on weekly bases.\r\n\r\n\r\nMany thanks in advance for your time, efforts and valuable work done.\r\n\r\nEnjoy wonderful WE!\r\nHave fun & BR",
+                "IsOrganizer": false,
+                "IsSeriesCancelled": false,
+                "Charm": "None",
+                "SeriesId": "040000008200E00074C5B7101A82E00800000000B03F34D8B62EDB01000000000000000010000000BB4B04375942AE4A9310711EAD76AD0C",
+                "Locations": [
+                    {
+                        "DisplayName": "Personal Laptop; )",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Personal Laptop; )",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAD72iu+AAA"
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "",
+                "IsFollowableMeeting": false
+            },
+            {
+                "__type": "CalendarItem:#Exchange",
+                "UID": "040000008200E00074C5B7101A82E00807E9060DB361FD7E8662DB01000000000000000010000000258725A5F0EB4E41BF3F59B2131A6B31",
+                "ItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "ChangeKey": "DwAAABYAAAC1fkIixSWLQK1izcd+UN+ZAAR6Dwoo",
+                    "Id": "AAkBOQAICN2qDT2GgAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNALV+QiLFJYtArWLNx35Q35kABBkwHL0AABA="
+                },
+                "ParentFolderId": {
+                    "__type": "FolderId:#Exchange",
+                    "Id": "AQMkAGRjMDhlOTBjLTAyOTQtNDUyZS04MjliLWUwMAA5NzU4NWMxMzYALgAAA+a1Y69TRVdGgc0Dn1HM/JEBALV+QiLFJYtArWLNx35Q35kAAAIBDQAAAA==",
+                    "ChangeKey": "AQAAAA=="
+                },
+                "Start": "2025-06-13T15:30:00+03:00",
+                "ItemClass": "IPM.Appointment.Occurrence",
+                "End": "2025-06-13T16:00:00+03:00",
+                "Subject": "EL Virtual Coffee",
+                "Sensitivity": "Normal",
+                "Importance": "Normal",
+                "IsAllDayEvent": false,
+                "FreeBusyType": "Tentative",
+                "IsMeeting": true,
+                "IsCancelled": false,
+                "Categories": [],
+                "IsRecurring": true,
+                "MeetingRequestWasSent": false,
+                "IsResponseRequested": true,
+                "CalendarItemType": "Occurrence",
+                "ResponseType": "NoResponseReceived",
+                "Organizer": {
+                    "Mailbox": {
+                        "Name": "Aleksandar Stoev",
+                        "EmailAddress": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=2580B1DBBB784A4E8C0DB3794ED4C635-E8F9B5EE-49",
+                        "RoutingType": "EX"
+                    }
+                },
+                "ReminderIsSet": true,
+                "ReminderMinutesBeforeStart": 15,
+                "HasAttachments": false,
+                "ExtendedProperty": [
+                    {
+                        "ExtendedFieldURI": {
+                            "__type": "ExtendedPropertyUri:#Exchange",
+                            "DistinguishedPropertySetId": "PublicStrings",
+                            "PropertyName": "SkypeTeamsProperties",
+                            "PropertyType": "String"
+                        },
+                        "Value": "{\"cid\":\"19:meeting_YjZmNDc3ZDUtNDczMi00MTk3LTkyMjktMWIzMTk2N2NjYmYz@thread.v2\",\"rid\":\"0\",\"mid\":\"0\",\"private\":true,\"type\":0}"
+                    }
+                ],
+                "EffectiveRights": {
+                    "CreateAssociated": false,
+                    "CreateContents": false,
+                    "CreateHierarchy": false,
+                    "Delete": true,
+                    "Modify": true,
+                    "Read": true
+                },
+                "InstanceKey": "AQAAAAAAAQ0BAAAEGS5+pgAAAAA=",
+                "Location": {
+                    "DisplayName": "Microsoft Teams Meeting",
+                    "PostalAddress": {
+                        "Street": null,
+                        "City": null,
+                        "State": null,
+                        "Country": null,
+                        "PostalCode": null,
+                        "PostOfficeBox": null,
+                        "Type": "Home",
+                        "LocationSource": "None"
+                    },
+                    "Id": "Microsoft Teams Meeting",
+                    "IdType": "Private",
+                    "LocationType": "Unknown"
+                },
+                "EntityExtractionResult": {},
+                "StartTimeZoneId": "FLE Standard Time",
+                "EndTimeZoneId": "FLE Standard Time",
+                "Preview": "Get together and share all things EL & more :)\r\n\r\n\r\n\r\n________________________________________________________________________________\r\nMicrosoft Teams Need help?\r\nJoin the meeting now\r\nMeeting ID: 370 419 182 191\r\nPasscode: oL3ne398\r\n____________________",
+                "IsOrganizer": false,
+                "IsSeriesCancelled": false,
+                "Charm": "None",
+                "SeriesId": "040000008200E00074C5B7101A82E00800000000B361FD7E8662DB01000000000000000010000000258725A5F0EB4E41BF3F59B2131A6B31",
+                "Locations": [
+                    {
+                        "DisplayName": "Microsoft Teams Meeting",
+                        "PostalAddress": {
+                            "Street": null,
+                            "City": null,
+                            "State": null,
+                            "Country": null,
+                            "PostalCode": null,
+                            "PostOfficeBox": null,
+                            "Type": "Home",
+                            "LocationSource": "None"
+                        },
+                        "Id": "Microsoft Teams Meeting",
+                        "IdType": "Private",
+                        "LocationType": "Unknown"
+                    }
+                ],
+                "DoNotForwardMeeting": false,
+                "SeriesMasterItemId": {
+                    "__type": "ItemId:#Exchange",
+                    "Id": "AAkALgAAAAAAHYQDEapmEc2byACqAC/EWg0AtX5CIsUli0CtYs3HflDfmQAEGTAcvQAA"
+                },
+                "Apps": [],
+                "SkypeTeamsProperties": "{\"cid\":\"19:meeting_YjZmNDc3ZDUtNDczMi00MTk3LTkyMjktMWIzMTk2N2NjYmYz@thread.v2\",\"rid\":\"0\",\"mid\":\"0\",\"private\":true,\"type\":0}",
+                "IsFollowableMeeting": false
+            }
+        ],
+        "ResponseCode": "NoError",
+        "ResponseClass": "Success"
+    }
+}

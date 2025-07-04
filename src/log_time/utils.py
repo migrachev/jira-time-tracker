@@ -23,6 +23,12 @@ def is_valid_date(date_str: str) -> bool:
     except ValueError:
         return False
     
+def is_valid_period(start: str, end: str) -> bool:
+        if not is_valid_date(start) or not is_valid_date(end):
+            return False
+    
+        return end >= start
+    
 def split_work_log(s: str) -> tuple[str, str, str]:
     s = s.strip()
     if s.startswith('-'):

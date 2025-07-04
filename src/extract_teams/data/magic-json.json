@@ -1,0 +1,182 @@
+[
+    {
+        "start": "2025-06-02",
+        "duration": 1.0,
+        "subject": "[beYs] WebViews - PreProd payments bad redirect problem. with Lyubo",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-02",
+        "duration": 0.5,
+        "subject": "[Reminder] Time Approval ",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-02",
+        "duration": 0.5,
+        "subject": "EL Team daily",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-02",
+        "duration": 1.0,
+        "subject": "[beYs] WebViews - define expectation to Kipmi and WBE for RB WebView Production",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-02",
+        "duration": 0.5,
+        "subject": "[beYs] Sapphire - Forward ref on Offcanvas discussion with Niki and Zarko",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-02",
+        "duration": 0.5,
+        "subject": "[beYs] WebViews - investigate how can we own preprod deliveries",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-03",
+        "duration": 0.5,
+        "subject": "EL Team daily",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-03",
+        "duration": 1.5,
+        "subject": "EL Sprint Retrospective",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-03",
+        "duration": 1.5,
+        "subject": "EL Backlog Refinement ",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-03",
+        "duration": 0.5,
+        "subject": "[Wallet]: Android Sprint Demo",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-03",
+        "duration": 0.5,
+        "subject": "[Wallet]: iOS Sprint Demo",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-03",
+        "duration": 0.5,
+        "subject": "[beYs] EL/WebView - New PreProd delivery procedure and impacts on EL and WebView projects.",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-03",
+        "duration": 0.5,
+        "subject": "EL Sprint Demo",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-03",
+        "duration": 0.5,
+        "subject": "[beYs] NomDel - discuss authentication patterns with Oleg",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-04",
+        "duration": 1.0,
+        "subject": "[Kipmi] Referral page",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-04",
+        "duration": 0.5,
+        "subject": "EL Team daily",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-04",
+        "duration": 0.5,
+        "subject": "Sprint demo",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-04",
+        "duration": 1.5,
+        "subject": "EL Sprint Planning",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-04",
+        "duration": 1.0,
+        "subject": "[beYs] EL - define good use of Pushtiev's loading animation in EL",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-05",
+        "duration": 0.5,
+        "subject": "EL Team daily",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-05",
+        "duration": 0.5,
+        "subject": "[beYs] Sapphire - news on work on Sapphire ideas.",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-05",
+        "duration": 1.5,
+        "subject": "[beYs] Kipmi - referral page at kipmi.com ",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-05",
+        "duration": 1.0,
+        "subject": "Reducbox in Kipmi - WBE/mobile sync",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-05",
+        "duration": 1.0,
+        "subject": "[beYs] Kipmi - environments for referral with Kosta",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-06",
+        "duration": 0.5,
+        "subject": "EL Team daily",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-06",
+        "duration": 1.0,
+        "subject": "[beYs] Sapphire - place for DS documentation project to live",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-06",
+        "duration": 1.0,
+        "subject": "[beYs] iOS - Reducbox needs overview",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-06",
+        "duration": 1.0,
+        "subject": "[beYs] DevOps on Referral app for Kipmi.",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-06",
+        "duration": 0.5,
+        "subject": "!!! Reminder EL: Jira Time Tracking",
+        "jira": ""
+    },
+    {
+        "start": "2025-06-06",
+        "duration": 0.5,
+        "subject": "EL Virtual Coffee",
+        "jira": ""
+    }
+]
