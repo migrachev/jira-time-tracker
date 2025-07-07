@@ -4,6 +4,7 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, Future, as_completed
 from requests.auth import HTTPBasicAuth
 from prompt_toolkit import prompt
+from prompt_toolkit.formatted_text import HTML
 from datetime import date
 from threading import Event
 from subprocess import CompletedProcess
@@ -24,8 +25,8 @@ def log_time(user_data: UserData) -> bool:
         print("\r                                                      ")
         loading_reachable_check_event.set()
         while True:
-            username: str = prompt("We will need your JIRA username: ")
-            password: str = prompt("We will need your JIRA password: ", is_password=True)
+            username: str = prompt(HTML("<ansiblue>We will need your JIRA username: </ansiblue>"))
+            password: str = prompt(HTML("<ansiblue>We will need your JIRA password: </ansiblue>"), is_password=True)
             auth: HTTPBasicAuth = HTTPBasicAuth(username, password)
             loading_credentials_check_event: Event = Event()
             start_spinner_thread(loading_credentials_check_event)

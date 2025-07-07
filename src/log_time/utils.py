@@ -26,6 +26,9 @@ def is_valid_date(date_str: str) -> bool:
 def is_valid_period(start: str, end: str) -> bool:
         if not is_valid_date(start) or not is_valid_date(end):
             return False
+        
+        if datetime.fromisoformat(start).weekday() > 5 or datetime.fromisoformat(end).weekday() > 5:
+            return False
     
         return end >= start
     
@@ -47,19 +50,21 @@ def split_work_log(s: str) -> tuple[str, str, str]:
     
     return first_part.strip(), second_part.strip(), third_part.strip()
 
-def is_proper_work_week(data: UserData) -> bool:
+def are_proper_work_days(data: UserData, period: tuple[str, str]) -> bool:
     dates: KeysView = data.keys()
+    start, end = period
     date_objects: list[datetime] = [datetime(year=y, month=m, day=d) for (y, m, d) in dates]
-    first_week: int = date_objects[0].isocalendar()[1]
-    working_days: set = set()
 
     for date in date_objects:
-        if date.weekday() < 5:
-            if date.isocalendar()[1] != first_week:
-                return False
-            working_days.add(date.weekday())
+        date_string = date.isoformat().split("T")[0]
+        if date_string < start or date_string > end: # All dates are in the intended period
+            return False
+        if date.weekday() > 5: # Weekends are not allowed
+            return False
+        
+    return True
+        
     
-    return len(working_days) == 5
 
 def are_jira_identifiers_valid(data: UserData) -> bool:
     result: bool = True
@@ -105,21 +110,22 @@ def are_times_valid(data: UserData) -> bool:
 
     return result
 
-def is_fully_logged_week(data: UserData): #expects already checked data with are_times_valid
-    total: float = 0; value: list[tuple[str, str, str]]
+def are_days_fully_logged(data: UserData) -> bool: #expects already checked data with are_times_valid
+    value: list[tuple[str, str, str]]
     for _, value in data.items():
-        time: str
+        time: str; total: float = 0
         for time, _, _ in value:
             total += float(time[:-1])
+        if total != 8:
+            return False
 
-    return total == 40
+    return True
     
 def in_conflict_with_previous_execution(logs: list[str]) -> bool:
     file_path: Path = APP_DATA / "data-hash-logs.log"
     result = False
     if os.path.isfile(file_path): 
         with open(file_path, "r") as logs_file:
-            result = False
             for line in list(logs_file):
                 if line in logs:
                     result = True

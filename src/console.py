@@ -12,8 +12,8 @@ def demand_period(
     invalid_period: str,
     invalid_date: str,
     date_validator: Callable[[str], bool],
-    period_validator: Callable[[str, str], bool]
-        
+    period_validator: Callable[[str, str], bool],
+    skip_clear: bool = True
 ) -> tuple[str, str]:
     def infer_defaults() -> tuple[str, str]:
         today = datetime.now().date()
@@ -25,7 +25,8 @@ def demand_period(
         return start_date.isoformat(), end_date.isoformat()
     
     default_start, default_end = infer_defaults()
-    clear_screen()
+    if not skip_clear:
+        clear_screen()
     while True:
         print(title)
         start = demand_prompt(label_start, invalid_date, date_validator, default_start, True)
@@ -82,7 +83,7 @@ def demand_choice(label: str, options: dict[str, str]) -> str:
 
      while True:
         clear_screen()
-        print(f"{label}: ")
+        print(f"{label}")
         for i, code in enumerate(codes):
             if i == index:
                 print(f"> \033[32m{options[code]}\033[0m")  # Highlight the selected option

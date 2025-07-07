@@ -2,7 +2,6 @@ import json
 from box import Box
 from datetime import datetime
 from functools import reduce
-from typing import Callable
 
 from ..console import demand_clipboard, demand_choice, clear_screen
 from .utils import get_calendar_date, find_jira_id, get_duration, group_overlapping_events, remove_pattern_with_neighbors

@@ -6,7 +6,7 @@ def get() -> tuple[str, str]:
     label_start: str = "Enter the start of the period you want to extract (yyyy-mm-dd)"
     label_end: str = "Enter the end of the period you want to extract (yyyy-mm-dd)"
     invalid_date: str = "Your input is not a valid date. Make sure you provide date in yyyy-mm-dd format."
-    invalid_period: str = "The period you entered is invalid. Please try again!"
+    invalid_period: str = "The period you entered is invalid. Note that period can't start or end on weekend day."
     
     start, end = demand_period(
         title=title,

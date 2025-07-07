@@ -1,18 +1,19 @@
-import readchar
 from prompt_toolkit import prompt
-from typing import TextIO, Iterator
+from prompt_toolkit.formatted_text import HTML
+from typing import TextIO
+from datetime import datetime, timedelta
 
 from . import hash
-from .utils import parse_iso_date, is_valid_date, split_work_log, in_conflict_with_previous_execution
-from .utils import is_proper_work_week, are_jira_identifiers_valid, are_times_valid, is_fully_logged_week
+from .utils import parse_iso_date, is_valid_date, split_work_log, in_conflict_with_previous_execution, is_valid_period
+from .utils import are_proper_work_days, are_jira_identifiers_valid, are_times_valid, are_days_fully_logged
 from .mytypes import UserData
 from ..config import Config
-from ..console import demand_choice
+from ..console import demand_choice, demand_period
 
-def validate(user_data: UserData):
+def validate(user_data: UserData, period: tuple[str, str]):
     is_valid = True
 
-    if not is_proper_work_week(user_data):
+    if not are_proper_work_days(user_data, period):
         print("\033[31mWeek days defined in the input data are improper!\033[0m")
         is_valid = False
     elif not are_jira_identifiers_valid(user_data):
@@ -21,13 +22,13 @@ def validate(user_data: UserData):
     elif not are_times_valid(user_data):
         print("\033[31mLog times provided in the data are missing or improper!\033[0m")
         is_valid = False
-    elif not is_fully_logged_week(user_data):
-        print("\033[31mThe total sum of worked hours is not 40!\033[0m")
+    elif not are_days_fully_logged(user_data):
+        print("\033[31mThe days provided in the input data are not properly logged (8 hours per day)!\033[0m")
         is_valid = False
     else:
         logs_hash: list[str] = hash.generate(user_data)
         if in_conflict_with_previous_execution(logs_hash):
-            print("\033[31mInput data have already been process!\033[0m")
+            print("\033[31mOne or more of the days provided in the input data have already been processed!\033[0m")
             is_valid = False
 
     return is_valid
@@ -50,13 +51,34 @@ def parse(string_data: str) -> UserData:
 
     return parsed
 
-def get() -> str:
-    title: str = "How do you want to supply us with the data to process?"
+def get_period() -> tuple[str, str]:
+    title: str = "\033[34m\nWhat is the period you want to log in JIRA?\033[0m"
+    label_start: str = "Enter the start of the period (yyyy-mm-dd)"
+    label_end: str = "Enter the end of the period (yyyy-mm-dd)"
+    invalid_date: str = "Your input is not a valid date. Make sure you provide date in yyyy-mm-dd format."
+    invalid_period: str = "The period you entered is invalid. Note that period can't start or end on weekend day."
+    
+    start, end = demand_period(
+        title=title,
+        label_start=label_start,
+        label_end=label_end,
+        invalid_date=invalid_date,
+        invalid_period=invalid_period,
+        date_validator=is_valid_date,
+        period_validator=is_valid_period,
+        skip_clear=True
+    )
+
+    return start, end 
+
+def get() -> tuple[tuple[str, str], str]:
+    title: str = "\033[34mHow do you want to supply us with the data to process?\033[0m"
     options: dict[str, str] = {
         "file": "Refer data from file.",
         "paste": "Paste data as text."
     }
     choice: str = demand_choice(title, options)
+    file_location: str = ""
 
     data: str = ""
     if choice == "paste":
@@ -64,20 +86,30 @@ def get() -> str:
         data = data.strip()
     else:
         default_logs_location = Config.get("default_logs_location")
-        file_location: str = prompt("Please provide the file location: ", default=default_logs_location)
+        print()
+        file_location = prompt(HTML("<ansiblue>Please provide the file location: </ansiblue>"), default=default_logs_location)
+    
+    start, end = get_period()
+
+    if file_location:    
         with open(file_location, 'r', encoding='utf-8') as data_file:
             data_file: TextIO
-            flag: int = -1
-            iterator: Iterator[str] = reversed(list(data_file))
-            while flag < 1:
-                line: str = next(iterator)
+            inside: bool = False
+            actual_end = (datetime.fromisoformat(end) + timedelta(days=1)).isoformat().split("T")[0]
+
+            for line in list(data_file):
                 stripped: str = line.strip()
-                if stripped and (stripped.startswith("=") or stripped.startswith("#")):  # Comment/empty lines are ignored
-                    if flag == 0:
-                        flag = 1
-                elif stripped:
-                    flag = 0
+                is_comment = stripped.startswith("=") or stripped.startswith("#")
+                is_empty = len(stripped) == 0
+
+                if stripped == start:
+                    inside = True
+                elif stripped == actual_end:
+                    inside = False
+
+                if inside and not is_comment and not is_empty:
                     new_line = "\n"
                     if not data: new_line = ""
-                    data = stripped + new_line + data
-    return data
+                    data += new_line + stripped
+
+    return ((start, end), data)
